@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy-grid</title>
+    <style>
+        margin:0px;
+        min-height:100vh;
+        body{
+            border: 1px solid;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "header header header header"
+    "nav content content ads"
+    "nav content content ads"
+    "footer footer footer footer"; 
+        }
+        header{grid-area:header;}
+        header, footer{
+            background-color: aqua;
+        }
+        nav, .ads{
+           background-color:rgb(192, 126, 236) ; 
+        } 
+        .content{
+            background-color: fuchsia;
+            grid-area: content;
+        }
+        footer{
+            grid-area: footer;
+        }
+        nav{
+            grid-area: nav;
+        }
+        .ads{
+            grid-area: ads;
+        }
+           </style>
+</head>
+<body>
+    <header>Header</header>
+    <nav>Nav</nav>
+    <div class="content">Content</div>
+    <div class="ads">Ads</div>
+    <footer>Footer</footer>
+</body>
+</html>
