@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body,not(.full-bleed){
+        max-width:680px;
+        max-width: 50vw;
+               
+    }
+    body{
+        height: 100vh;
+        
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items:  center;
+       
+        width:100%;
+        
+        text-align: center;
+    }
+    header,p,img{
+          border:solid 1px;
+          width:50%;
+    }
+    .full-bleed{
+        width: 100vw;
+        max-height: 50%;
+    }
+    </style>
+</head>
+<body class="wrapper">
+    <header><h1>header</h1></header>
+    <p>bloc 1 <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, expedita quae. Earum reiciendis dolor at excepturi! Ut incidunt ab, sequi temporibus quam fuga praesentium amet, beatae dicta nisi sit quae!</p>
+    <img class="full-bleed" src="" alt="bloc 2">
+    <p>bloc 3 <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi eligendi, ex vitae velit architecto nesciunt magni voluptate quas doloribus sunt quia. Corporis est labore esse vel eveniet ratione doloremque sapiente.</p>
+</body>
+</html>
