@@ -8,6 +8,8 @@
     <style>
         body{
             min-height: 200vh;
+            display: flex;
+            flex-direction: column-reverse;
              
               }
         ul{
@@ -26,7 +28,13 @@
         }
         nav{
              position: sticky;
-              top:20px;
+             display: inline-block;
+            bottom:1rem;
+        }
+        @media  screen and (min-width:990px) {
+            body{
+            flex-direction: column;
+            }
         }
     </style>
 </head>
